@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(void) {
+	puts("Hello QNX!!!"); /* prints Hello World!!! */
+	printf("PID = %d\n", getpid()); // Get the ID of the Process 
+	while(1)
+	{
+		printf("Process Running ID = %d\n",getpid());
+	}
+	return EXIT_SUCCESS;
+}
